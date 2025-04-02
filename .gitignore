@@ -5,3 +5,8 @@ devenv*
 .direnv
 
 .envrc
+.cache
+out
+
+/timings
+/compile_commands.json

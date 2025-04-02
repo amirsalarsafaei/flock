@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
 project(FLOCK VERSION 1.0 DESCRIPTION "Lock-Free Locks" LANGUAGES CXX)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Set a default build type
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build type (Debug Release RelWithDebInfo MinSizeRel)" FORCE)
@@ -78,4 +80,3 @@ endif()
 add_subdirectory(benchmark)
 
 add_subdirectory(setbench)
-
